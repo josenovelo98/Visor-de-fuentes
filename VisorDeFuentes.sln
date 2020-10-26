@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisorDeFuentes", "VisorDeFuentes\VisorDeFuentes.csproj", "{56F50EA3-AE23-4F60-B7D7-F13AC9F1F74F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56F50EA3-AE23-4F60-B7D7-F13AC9F1F74F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56F50EA3-AE23-4F60-B7D7-F13AC9F1F74F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56F50EA3-AE23-4F60-B7D7-F13AC9F1F74F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56F50EA3-AE23-4F60-B7D7-F13AC9F1F74F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60C8C104-2945-4E79-80B4-16B66EFF871B}
+	EndGlobalSection
+EndGlobal
