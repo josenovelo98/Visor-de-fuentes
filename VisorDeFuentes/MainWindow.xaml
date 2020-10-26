@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VisorDeFuentes"
         mc:Ignorable="d"
-        Title="Visor de fuentes" Height="350" Width="500">
+        Title="Visor de fuentes" Height="350" Width="550">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -18,11 +18,11 @@
         </Grid.ColumnDefinitions>
         <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Margin="8" BorderBrush="Red" BorderThickness="1">
             <DockPanel Margin="4">
-                <TextBlock Text="Instituto Tecnologico de Campeche" x:Name="leyendatextbox" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="Instituto Tecnologico de Campeche" x:Name="leyendatextblock" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </DockPanel>
         </Border>
         <GroupBox Grid.Row="1" Grid.Column="0" Header="Fuente" BorderThickness="1" BorderBrush="Purple" Margin="8,4,4,8">
-            <ComboBox x:Name="fuentecombobox" VerticalAlignment="Top" SelectedIndex="0">
+            <ComboBox x:Name="fuentecombobox" VerticalAlignment="Top" SelectedIndex="0" SelectionChanged="fuentecombobox_SelectionChanged">
                 <ComboBoxItem Content="Aria"/>
                 <ComboBoxItem Content="Consolas"/>
                 <ComboBoxItem Content="Times New Roman"/>
@@ -31,17 +31,16 @@
         </GroupBox>
         <GroupBox Grid.Row="1" Grid.Column="1" Header="Estilo" BorderThickness="1" BorderBrush="BlueViolet" Margin="4,4,4,8">
             <StackPanel>
-                <CheckBox Content="Cursiva" Margin="8,8,8,4" IsChecked="False" x:Name="cursivacheckbox"/>
-                <CheckBox Content="Negritas" Margin="8,4,8,8" IsChecked="False" x:Name="negritascheckbox"/>
+                <CheckBox Content="Cursiva" Margin="8,8,8,4" IsChecked="False" x:Name="cursivacheckbox" Checked="cursivacheckbox_Checked" Unchecked="cursivacheckbox_Unchecked"/>
+                <CheckBox Content="Negritas" Margin="8,4,8,8" IsChecked="False" x:Name="negritascheckbox" Checked="negritascheckbox_Checked" Unchecked="negritascheckbox_Unchecked"/>
             </StackPanel>
         </GroupBox>
         <GroupBox Grid.Row="1" Grid.Column="2" Header="Tamaño" Margin="4,4,8,8" BorderBrush="Blue" BorderThickness="1">
             <StackPanel>
-                <RadioButton x:Name="smallradiobuttom" Content="Pequeña" Margin="8,8,8,4" IsChecked="True"/>
-                <RadioButton x:Name="mediumradiobuttom" Content="Meadiana" Margin="8,4,8,4" IsChecked="False"/>
-                <RadioButton x:Name="largeradiobuttom" Content="Grande" Margin="8,4,8,8" IsChecked="False"/>
+                <RadioButton x:Name="smallradiobutton" Content="Pequeña" Margin="8,8,8,4" IsChecked="True" Checked="tamañoradiobuttom_Checked"/>
+                <RadioButton x:Name="mediumradiobutton" Content="Meadiana" Margin="8,4,8,4" IsChecked="False" Checked="tamañoradiobuttom_Checked"/>
+                <RadioButton x:Name="largeradiobutton" Content="Grande" Margin="8,4,8,8" IsChecked="False" Checked="tamañoradiobuttom_Checked"/>
             </StackPanel>
         </GroupBox>
-
     </Grid>
 </Window>
